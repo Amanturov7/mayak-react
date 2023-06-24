@@ -3,7 +3,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 // import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import OdnoclassnikiIcon from "@mui/icons-material/Odnoclassniki";
+// import OdnoclassnikiIcon from "@mui/icons-material/Odnoclassniki";
 import InstagramIcon from "@mui/icons-material/Instagram";
 // Material Kit 2 React components
 import MKTypography from "components/MKTypography";
@@ -29,10 +29,10 @@ export default {
       icon: <TwitterIcon />,
       link: "https://twitter.com/MayakBishkek?t=OqRrvG6GMfEc1C0uWEOQyw&s=08",
     },
-    {
-      icon: <OdnoclassnikiIcon />,
-      link: "https://ok.ru/profile/587732091285?utm_campaign=android_share&utm_content=profile",
-    },
+    // {
+    //   icon: <OdnoclassnikiIcon />,
+    //   link: "https://ok.ru/profile/587732091285?utm_campaign=android_share&utm_content=profile",
+    // },
     {
       icon: <YouTubeIcon />,
       link: "https://www.youtube.com/channel/UCmS1eU5sckxlFWA6hJ1sQ-A",
