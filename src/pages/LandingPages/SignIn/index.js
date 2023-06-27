@@ -54,13 +54,13 @@ function SignInBasic() {
     <>
       <DefaultNavbar
         routes={routes}
-        action={{
-          type: "external",
-          name: "sign in",
-          route: "/pages/authentication/sign-in",
-          label: "Войти",
-          color: "info",
-        }}
+        // action={{
+        //   type: "external",
+        //   name: "sign in",
+        //   route: "/pages/authentication/sign-in",
+        //   label: "Войти",
+        //   color: "info",
+        // }}
         transparent
         light
       />

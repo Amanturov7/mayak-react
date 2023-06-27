@@ -52,6 +52,9 @@ import ContactUs from "pages/LandingPages/ContactUs";
 // import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
 import AboutUs from "pages/LandingPages/AboutUs";
+import Employee from "pages/LandingPages/Employee";
+
+// import Author from "pages/LandingPages/Author";
 // Sections
 // import PageHeaders from "layouts/sections/page-sections/page-headers";
 // import Features from "layouts/sections/page-sections/featuers";
@@ -99,7 +102,8 @@ const routes = [
   {
     name: "Сотрудники",
     icon: <People />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
+    route: "/pages/landing-pages/employee",
+    component: <Employee />,
   },
   {
     type: "external",

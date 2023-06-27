@@ -46,17 +46,18 @@ export default {
     {
       name: "Компания",
       items: [
-        { name: "О нас", href: "https://www.creative-tim.com/presentation" },
-        { name: "Новости", href: "https://www.creative-tim.com/templates/free" },
-        { name: "Услуги", href: "https://www.creative-tim.com/templates/premium" },
+        { name: "О нас", route: "/pages/landing-pages/about-us" },
+        { name: "Новости", route: "/pages/landing-pages/information" },
+        { name: "Услуги", route: "/pages/landing-pages/information" },
+        { name: "Главная страница", route: "/pages/Home" },
       ],
     },
     {
       name: "Ресурсы",
       items: [
-        { name: "Галерея", href: "https://iradesign.io/" },
-        { name: "Зависимые", href: "https://www.creative-tim.com/bits" },
-        { name: "Престарелые", href: "https://www.creative-tim.com/affiliates/new" },
+        { name: "Галерея", route: "#" },
+        { name: "Зависимые", route: "#" },
+        { name: "Престарелые", route: "#" },
       ],
     },
     {
@@ -81,7 +82,7 @@ export default {
       All rights reserved. Copyright &copy; {date} Маяк Бишкек by{" @Amanturov7"}
       <MKTypography
         component="a"
-        href="https://www.creative-tim.com"
+        href="#"
         target="_blank"
         rel="noreferrer"
         variant="button"

@@ -37,17 +37,17 @@ import Services from "pages/LandingPages/Information/Sections/services";
 function Information() {
   return (
     <>
-      <MKBox position="fixed" top="0.5rem" width="100%">
-        <DefaultNavbar
-          routes={routes}
-          action={{
-            type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-react",
-            label: "Войти",
-            color: "info",
-          }}
-        />
-      </MKBox>
+      <DefaultNavbar
+        routes={routes}
+        // action={{
+        //   name: "sign in",
+        //   route: "/pages/authentication/sign-in",
+        //   label: "Войти",
+        //   color: "info",
+        //   component: <SignIn />,
+        // }}
+        sticky
+      />
       {/* <Grid container spacing={3} alignItems="center">
         <Grid item xs={12} lg={6}>
           <MKBox
