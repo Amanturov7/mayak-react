@@ -17,7 +17,6 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
-
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
@@ -27,34 +26,36 @@ import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 // import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
-// Presentation page sections
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-// import Download from "pages/Presentation/sections/Download";
-// Presentation page components
-// import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+// Home page sections
+import Information from "pages/Home/sections/Information";
+import DesignBlocks from "pages/Home/sections/DesignBlocks";
+// import Pages from "pages/Home/sections/Pages";
+// import Testimonials from "pages/Home/sections/Testimonials";
+// import Download from "pages/Home/sections/Download";
+// Home page components
+// import BuiltByDevelopers from "pages/Home/components/BuiltByDevelopers";
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
-import SignIn from "layouts/pages/authentication/sign-in";
+// import SignIn from "layouts/pages/authentication/sign-in";
 
 // Images
 import bgImage from "assets/images/bg-presentation.jpg";
+import Team from "pages/Home/sections/Team";
 
-function Presentation() {
+function Home() {
   return (
     <>
       <DefaultNavbar
         routes={routes}
-        action={{
-          name: "sign in",
-          route: "/pages/authentication/sign-in",
-          label: "Войти",
-          color: "info",
-          component: <SignIn />,
-        }}
+        // action={{
+        //   name: "sign in",
+        //   route: "/pages/authentication/sign-in",
+        //   label: "Войти",
+        //   color: "info",
+        //   component: <SignIn />,
+        // }}
+        sticky
       />
       <MKBox
         minHeight="75vh"
@@ -107,7 +108,7 @@ function Presentation() {
       >
         <Information />
         <DesignBlocks />
-        <Pages />
+        {/* <Pages /> */}
         {/* <Container sx={{ mt: 6 }}>
         </Container> */}
         {/* <Container>
@@ -154,7 +155,7 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container> */}
-        <Testimonials />
+        {/* <Testimonials /> */}
         {/* <Download /> */}
         {/* <MKBox pt={18} pb={6}>
           <Container>
@@ -208,6 +209,7 @@ function Presentation() {
             </Grid>
           </Container>
         </MKBox> */}
+        <Team />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
@@ -216,4 +218,4 @@ function Presentation() {
   );
 }
 
-export default Presentation;
+export default Home;

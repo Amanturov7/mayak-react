@@ -32,7 +32,7 @@ import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 function Services() {
   return (
-    <MKBox component="section" py={6} my={6}>
+    <MKBox component="section" py={12} my={2}>
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
@@ -61,7 +61,7 @@ function Services() {
               />
             </RotatingCard> */}
           </Grid>
-          <Grid item xs={6} lg={20} sx={{ ml: "auto" }}>
+          <Grid item xs={12} lg={20} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
