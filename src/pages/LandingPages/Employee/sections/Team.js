@@ -43,10 +43,10 @@ function Team() {
       <Container>
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-            <MKTypography variant="h3" color="Black">
+            <MKTypography variant="h3" color="dark">
               Наши сотрудники
             </MKTypography>
-            <MKTypography variant="body2" color="Black" opacity={0.8}>
+            <MKTypography variant="body2" color="dark" opacity={0.8}>
               Квалифицированные и опытные специалисты
             </MKTypography>
           </Grid>

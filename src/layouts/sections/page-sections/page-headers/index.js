@@ -28,8 +28,8 @@ function PageHeaders() {
     <BaseLayout
       title="Page Headers"
       breadcrumb={[
-        { label: "Page Sections", route: "/sections/page-sections/page-headers" },
-        { label: "Page Headers" },
+        { label: "Главная", route: "/" },
+        { label: "Новости", route: "/" },
       ]}
     >
       <View title="Header 1" code={headerOneCode} height="40rem">

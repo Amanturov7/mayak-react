@@ -44,7 +44,7 @@ import Icon from "@mui/material/Icon";
 // Pages
 // import AboutUs from "layouts/pages/landing-pages/about-us";
 // import Information from "layouts/pages/landing-pages/Information";
-import { Check, People, Phone } from "@mui/icons-material";
+import { AcUnit, Check, Phone } from "@mui/icons-material";
 // import Author from "pages/LandingPages/Author";
 import Information from "pages/LandingPages/Information";
 import ContactUs from "pages/LandingPages/ContactUs";
@@ -56,7 +56,7 @@ import Employee from "pages/LandingPages/Employee";
 
 // import Author from "pages/LandingPages/Author";
 // Sections
-// import PageHeaders from "layouts/sections/page-sections/page-headers";
+import PageHeaders from "layouts/sections/page-sections/page-headers";
 // import Features from "layouts/sections/page-sections/featuers";
 // import Navbars from "layouts/sections/navigation/navbars";
 // import NavTabs from "layouts/sections/navigation/nav-tabs";
@@ -89,9 +89,21 @@ const routes = [
     component: <Information />,
   },
   {
+    name: "Услуги",
+    icon: <Icon>info</Icon>,
+    route: "/pages/landing-pages/Information",
+    component: <Information />,
+  },
+  {
     name: "Галерея",
     icon: <Icon>photo</Icon>,
     href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
+  },
+  {
+    icon: <Icon>view_day</Icon>,
+    name: "Новости",
+    route: "/sections/page-sections/page-headers",
+    component: <PageHeaders />,
   },
   {
     name: "Связаться",
@@ -101,7 +113,7 @@ const routes = [
   },
   {
     name: "Сотрудники",
-    icon: <People />,
+    icon: <AcUnit />,
     route: "/pages/landing-pages/employee",
     component: <Employee />,
   },

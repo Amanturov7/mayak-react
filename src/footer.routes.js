@@ -7,8 +7,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 // Material Kit 2 React components
 import MKTypography from "components/MKTypography";
-
-// Images
+import AccessibilityNewRoundedIcon from "@mui/icons-material/AccessibilityNewRounded";
 import logoCT from "assets/images/logo-ct-dark.png";
 // import { Instagram } from "@mui/icons-material";
 
@@ -16,7 +15,7 @@ const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "Маяк",
+    name: "Общественный фонд «Маяк Бишкек»",
     image: logoCT,
     route: "/",
   },
@@ -29,10 +28,10 @@ export default {
       icon: <TwitterIcon />,
       link: "https://twitter.com/MayakBishkek?t=OqRrvG6GMfEc1C0uWEOQyw&s=08",
     },
-    // {
-    //   icon: <OdnoclassnikiIcon />,
-    //   link: "https://ok.ru/profile/587732091285?utm_campaign=android_share&utm_content=profile",
-    // },
+    {
+      icon: <AccessibilityNewRoundedIcon />,
+      link: "https://ok.ru/profile/587732091285?utm_campaign=android_share&utm_content=profile",
+    },
     {
       icon: <YouTubeIcon />,
       link: "https://www.youtube.com/channel/UCmS1eU5sckxlFWA6hJ1sQ-A",
@@ -78,8 +77,8 @@ export default {
     // },
   ],
   copyright: (
-    <MKTypography variant="button" fontWeight="regular">
-      All rights reserved. Copyright &copy; {date} Маяк Бишкек by{" @Amanturov7"}
+    <MKTypography>
+      All rights reserved. Copyright &copy; {date} Маяк Бишкек by Amanturov7
       <MKTypography
         component="a"
         href="#"

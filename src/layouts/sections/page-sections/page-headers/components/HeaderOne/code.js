@@ -57,7 +57,7 @@ function HeaderOne() {
                   fontWeight="regular"
                   p={1}
                   onClick={(e) => e.preventDefault()}
-                >
+                > 
                   Home
                 </MKTypography>
               </MKBox>
