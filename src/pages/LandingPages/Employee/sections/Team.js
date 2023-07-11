@@ -25,10 +25,10 @@ import MKTypography from "components/MKTypography";
 import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 
 // Images
-import team1 from "assets/images/team-5.jpg";
-import team2 from "assets/images/bruce-mars.jpg";
-import team3 from "assets/images/ivana-squares.jpg";
-import team4 from "assets/images/ivana-square.jpg";
+import mahabat from "assets/images/mahabat.jpg";
+import dima from "assets/images/dima.jpg";
+import kumysh from "assets/images/kumysh.jpg";
+import sherboto from "assets/images/sherboto.jpg";
 
 function Team() {
   return (
@@ -55,7 +55,7 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image={team1}
+                image={mahabat}
                 name="Махабат Ниязбекова"
                 position={{ color: "info", label: "Психолог" }}
                 description="В РЦ «Маяк Бишкек» замечательная и дружная группа (реабилитантов). Прекрасные условия пребывания. Хорошая и профессиональная команда консультантов и психологов. Очень гибкий и хорошо налаженный режим дня для группы. Качественные услуги и программы РЦ."
@@ -65,17 +65,17 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image={team3}
+                image={kumysh}
                 name="Байшукурова Кумыш Долгорбековна"
-                position={{ color: "info", label: "Нарколог-реабилитолог" }}
-                description="Высшей категории. Отличник здравоохранения КР. РЦ «Маяк Бишкек» имеет хороший опыт работы с химическими и другими видами зависимости. Постоянное прохождение и повышение квалификации команды РЦ. Предоставление психологов разных направлений. Духовника для укрепления веры и надежды на свое светлое будущее.  "
+                position={{ color: "info", label: "Нарколог-реабилитолог высшей категории" }}
+                description=" РЦ «Маяк Бишкек» имеет хороший опыт работы с химическими и другими видами зависимости. Постоянное прохождение и повышение квалификации команды РЦ. Предоставление психологов разных направлений. Духовника для укрепления веры и надежды на свое светлое будущее.  "
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image={team4}
+                image={dima}
                 name="Дмитрий Самарин"
                 position={{ color: "info", label: "Психолог" }}
                 description="РЦ «Маяк Бишкек» отлично проводит групповые и индивидуальные консультации для реабилитантов. Что очень хорошо сказывается на выздоровление. Полный анализ (чувств, мыслей и поведений) для дальнейшей работы и пояснения реабилитанту как бороться с зависимостью и как вооружиться в сложных ситуациях. Мотивация реабилитанта, что можно и нужно бороться с зависимостью. Зависимость – это болезнь которая не лечится с помощью краткосрочного курса терапии или медицинскими препаратами. Очень рад, что у нас в Кыргызстане открываются такие центры"
@@ -85,7 +85,7 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image={team2}
+                image={sherboto}
                 name="Шербото Токомбаев"
                 position={{ color: "info", label: "Гештальт терапевт" }}
                 description="Специалист лечения зависимости опыт более 25 лет «Гештальт терапевт» РЦ «Маяк Бишкек» показывает хорошие результаты по работе зависимости. Налаженная работа РЦ с группами созависимых (близких и родных) и Анонимных групп для зависимых. Предоставление качественных медицинских и консультационных услуг индивидуально для каждого реабилитанта. Полноценная реабилитация и качественная работа по программе 12 шагов."

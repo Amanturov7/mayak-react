@@ -35,33 +35,7 @@ function Services() {
     <MKBox component="section" py={12} my={2}>
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
-          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            {/* <RotatingCard>
-              <RotatingCardFront
-                image={bgFront}
-                icon="touch_app"
-                title={
-                  <>
-                    Узнать
-                    <br />
-                    подробнее
-                  </>
-                }
-                description="Свяжитесь с нами чтобы получить бесплатную консультацию."
-              />
-              <RotatingCardBack
-                image={bgBack}
-                title="Услуги"
-                description="Анонимный Реабилитационный центр предоставляет ряд услуг, чтобы узнать больше нажмите 'Подробнее'."
-                action={{
-                  type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "Подробнее",
-                }}
-              />
-            </RotatingCard> */}
-          </Grid>
-          <Grid item xs={6} lg={20} sx={{ ml: "auto" }}>
+          <Grid item xs={12} lg={12} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard

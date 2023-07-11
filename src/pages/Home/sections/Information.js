@@ -55,7 +55,7 @@ function Information() {
                 description="Анонимный Реабилитационный центр предоставляет ряд услуг, чтобы узнать больше нажмите 'Подробнее'."
                 action={{
                   type: "internal",
-                  route: "/pages/landing-pages/Inforamtion",
+                  route: "/pages/landing-pages/Information",
                   label: "Подробнее",
                 }}
               />

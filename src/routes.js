@@ -36,7 +36,7 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
-import Icon from "@mui/material/Icon";
+// import Icon from "@mui/material/Icon";
 
 // @mui icons
 // import GitHubIcon from "@mui/icons-material/GitHub";
@@ -44,9 +44,16 @@ import Icon from "@mui/material/Icon";
 // Pages
 // import AboutUs from "layouts/pages/landing-pages/about-us";
 // import Information from "layouts/pages/landing-pages/Information";
-import { AcUnit, Check, Phone } from "@mui/icons-material";
 // import Author from "pages/LandingPages/Author";
 import Information from "pages/LandingPages/Information";
+import Zavisimye from "pages/LandingPages/Zavisimye";
+import InformationIcon from "assets/images/navbar/Информация.png";
+import GalleryIcon from "assets/images/navbar/Галерея.png";
+import AboutUsIcon from "assets/images/navbar/О нас.png";
+import ServicesIcon from "assets/images/navbar/Услуги.png";
+import NewsIcon from "assets/images/navbar/Новости.png";
+import ContactUsIcon from "assets/images/navbar/Связаться.png";
+import EmployeeIcon from "assets/images/navbar/Сотрудники.png";
 import ContactUs from "pages/LandingPages/ContactUs";
 // import SignInPage from "layouts/pages/authentication/sign-in";
 // import Author from "layouts/pages/landing-pages/author";
@@ -78,42 +85,42 @@ import PageHeaders from "layouts/sections/page-sections/page-headers";
 const routes = [
   {
     name: "О нас",
-    icon: <Check />,
+    icon: <img src={AboutUsIcon} />,
     route: "/pages/landing-pages/about-us",
     component: <AboutUs />,
   },
   {
     name: "Информация",
-    icon: <Icon>info</Icon>,
-    route: "/pages/landing-pages/Inforamtion",
-    component: <Information />,
+    icon: <img src={InformationIcon} />,
+    route: "/pages/landing-pages/Zavisimye",
+    component: <Zavisimye />,
   },
   {
     name: "Услуги",
-    icon: <Icon>info</Icon>,
+    icon: <img src={ServicesIcon} />,
     route: "/pages/landing-pages/Information",
     component: <Information />,
   },
   {
     name: "Галерея",
-    icon: <Icon>photo</Icon>,
+    icon: <img src={GalleryIcon} />,
     href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
   },
   {
-    icon: <Icon>view_day</Icon>,
+    icon: <img src={NewsIcon} />,
     name: "Новости",
     route: "/sections/page-sections/page-headers",
     component: <PageHeaders />,
   },
   {
     name: "Связаться",
-    icon: <Phone />,
+    icon: <img src={ContactUsIcon} />,
     route: "/pages/landing-pages/contact-us",
     component: <ContactUs />,
   },
   {
     name: "Сотрудники",
-    icon: <AcUnit />,
+    icon: <img src={EmployeeIcon} />,
     route: "/pages/landing-pages/employee",
     component: <Employee />,
   },

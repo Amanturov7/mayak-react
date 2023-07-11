@@ -37,25 +37,21 @@ export default [
         image: `${imagesPrefix}/pricing.jpg`,
         name: "Pricing",
         count: 8,
-        pro: true,
       },
       {
         image: `${imagesPrefix}/faq.jpg`,
         name: "FAQ",
         count: 1,
-        pro: true,
       },
       {
         image: `${imagesPrefix}/blogs.jpg`,
         name: "Blog Posts",
         count: 11,
-        pro: true,
       },
       {
         image: `${imagesPrefix}/testimonials.jpg`,
         name: "Testimonials",
         count: 11,
-        pro: true,
       },
       // {
       //   image: `${imagesPrefix}/teams.jpg`,

@@ -46,17 +46,17 @@ export default {
       name: "Компания",
       items: [
         { name: "О нас", route: "/pages/landing-pages/about-us" },
-        { name: "Новости", route: "/pages/landing-pages/information" },
         { name: "Услуги", route: "/pages/landing-pages/information" },
-        { name: "Главная страница", route: "/pages/Home" },
+        { name: "Галерея", route: "/pages/landing-pages/information" },
+        { name: "Сотрудники", route: "/pages/landing-pages/employee" },
       ],
     },
     {
       name: "Ресурсы",
       items: [
-        { name: "Галерея", route: "#" },
-        { name: "Зависимые", route: "#" },
-        { name: "Престарелые", route: "#" },
+        { name: "Новости", route: "#" },
+        { name: "Информация о зависимости", route: "#" },
+        { name: "Связаться", route: "/pages/landing-pages/contact-us" },
       ],
     },
     {
