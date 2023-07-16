@@ -54,8 +54,8 @@ export default {
     {
       name: "Ресурсы",
       items: [
-        { name: "Новости", route: "#" },
-        { name: "Информация", route: "#" },
+        { name: "Новости", route: "/sections/page-sections/news" },
+        { name: "Информация", route: "/pages/landing-pages/Information" },
         { name: "Связаться", route: "/pages/landing-pages/contact-us" },
       ],
     },
@@ -63,8 +63,9 @@ export default {
       name: "Контактные данные",
       items: [
         { name: "Телефон: 0708 578 877" },
-        { name: "ул: Карадарьинская №52" },
-        { name: "rebcentermayakbishkek@gmail.com" },
+        { name: "0507 183 005 (Программный Руководитель)." },
+        { name: "Адрес: Кыргызская Республика, г. Бишкек, улица Карадарьинская №52" },
+        { name: "Почта: rebcentermayakbishkek@gmail.com." },
       ],
     },
     // {
@@ -77,16 +78,18 @@ export default {
     // },
   ],
   copyright: (
-    <MKTypography>
-      <p>All rights reserved. Copyright &copy; {date} Маяк Бишкек by Amanturov7 </p>
+    <MKTypography variant="button" fontWeight="regular">
+      All rights reserved. Copyright &copy; {date} MayakBishkek by{" "}
       <MKTypography
         component="a"
-        href="#"
+        href="https://www.instagram.com/amanturov7/"
         target="_blank"
         rel="noreferrer"
         variant="button"
         fontWeight="regular"
-      ></MKTypography>
+      >
+        @Amanturov7
+      </MKTypography>
     </MKTypography>
   ),
 };
