@@ -63,7 +63,7 @@ import Employee from "pages/LandingPages/Employee";
 
 // import Author from "pages/LandingPages/Author";
 // Sections
-import PageHeaders from "layouts/sections/page-sections/page-headers";
+import News from "layouts/sections/page-sections/news";
 // import Features from "layouts/sections/page-sections/featuers";
 // import Navbars from "layouts/sections/navigation/navbars";
 // import NavTabs from "layouts/sections/navigation/nav-tabs";
@@ -82,45 +82,49 @@ import PageHeaders from "layouts/sections/page-sections/page-headers";
 // import Toggles from "layouts/sections/elements/toggles";
 // import Typography from "layouts/sections/elements/typography";
 
+const iconStyle = {
+  width: "15px", // Укажите желаемую ширину
+  height: "15px", // Укажите желаемую высоту
+};
 const routes = [
   {
     name: "О нас",
-    icon: <img src={AboutUsIcon} />,
+    icon: <img src={AboutUsIcon} style={iconStyle} />,
     route: "/pages/landing-pages/about-us",
     component: <AboutUs />,
   },
   {
     name: "Информация",
-    icon: <img src={InformationIcon} />,
+    icon: <img src={InformationIcon} style={iconStyle} />,
     route: "/pages/landing-pages/Zavisimye",
     component: <Zavisimye />,
   },
   {
     name: "Услуги",
-    icon: <img src={ServicesIcon} />,
+    icon: <img src={ServicesIcon} style={iconStyle} />,
     route: "/pages/landing-pages/Information",
     component: <Information />,
   },
   {
     name: "Галерея",
-    icon: <img src={GalleryIcon} />,
+    icon: <img src={GalleryIcon} style={iconStyle} />,
     href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
   },
   {
-    icon: <img src={NewsIcon} />,
+    icon: <img src={NewsIcon} style={iconStyle} />,
     name: "Новости",
-    route: "/sections/page-sections/page-headers",
-    component: <PageHeaders />,
+    route: "/sections/page-sections/news",
+    component: <News />,
   },
   {
     name: "Связаться",
-    icon: <img src={ContactUsIcon} />,
+    icon: <img src={ContactUsIcon} style={iconStyle} />,
     route: "/pages/landing-pages/contact-us",
     component: <ContactUs />,
   },
   {
     name: "Сотрудники",
-    icon: <img src={EmployeeIcon} />,
+    icon: <img src={EmployeeIcon} style={iconStyle} />,
     route: "/pages/landing-pages/employee",
     component: <Employee />,
   },

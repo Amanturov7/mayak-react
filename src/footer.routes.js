@@ -55,7 +55,7 @@ export default {
       name: "Ресурсы",
       items: [
         { name: "Новости", route: "#" },
-        { name: "Информация о зависимости", route: "#" },
+        { name: "Информация", route: "#" },
         { name: "Связаться", route: "/pages/landing-pages/contact-us" },
       ],
     },
@@ -78,7 +78,7 @@ export default {
   ],
   copyright: (
     <MKTypography>
-      All rights reserved. Copyright &copy; {date} Маяк Бишкек by Amanturov7
+      <p>All rights reserved. Copyright &copy; {date} Маяк Бишкек by Amanturov7 </p>
       <MKTypography
         component="a"
         href="#"

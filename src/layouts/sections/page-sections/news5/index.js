@@ -23,13 +23,13 @@ import HeaderOne from "layouts/sections/page-sections/page-headers/components/He
 // PageHeaders page components code
 // import headerOneCode from "layouts/sections/page-sections/page-headers/components/HeaderOne/code";
 
-function PageHeaders() {
+function NewsPage5() {
   return (
     <BaseLayout
       title="В Бишкеке задержали учеников престижной школы с наркотиками"
       breadcrumb={[
         { label: "Главная", route: "/" },
-        { label: "Новости", route: "/" },
+        { label: "Новости", route: "/sections/page-sections/news" },
       ]}
     >
       <View title="Header 1" height="40rem">
@@ -39,4 +39,4 @@ function PageHeaders() {
   );
 }
 
-export default PageHeaders;
+export default NewsPage5;

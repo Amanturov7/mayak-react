@@ -1,28 +1,21 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 import { useEffect } from "react";
-
 // react-router components
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 // @mui material components
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import NewsPage1 from "layouts/sections/page-sections/news1";
+import NewsPage2 from "layouts/sections/page-sections/news2";
+import NewsPage3 from "layouts/sections/page-sections/news3";
+import NewsPage4 from "layouts/sections/page-sections/news4";
+import NewsPage5 from "layouts/sections/page-sections/news5";
+import PageHeaders from "layouts/sections/page-sections/page-headers";
+
+// import NewsPage2 from "./pages/Home/sections/components/news2";
 
 // Material Kit 2 React themes
+
 import theme from "assets/theme";
 import Home from "layouts/pages/Home";
 
@@ -56,6 +49,13 @@ export default function App() {
       <CssBaseline />
       <Routes>
         {getRoutes(routes)}
+        <Route path="/layouts/sections/page-sections/news1" element={<NewsPage1 />} />
+        <Route path="/layouts/sections/page-sections/news2" element={<NewsPage2 />} />
+        <Route path="/layouts/sections/page-sections/news3" element={<NewsPage3 />} />
+        <Route path="/layouts/sections/page-sections/news4" element={<NewsPage4 />} />
+        <Route path="/layouts/sections/page-sections/news5" element={<NewsPage5 />} />
+        <Route path="/layouts/sections/page-sections/page-headers" element={<PageHeaders />} />
+
         <Route path="/home" element={<Home />} />
         <Route path="*" element={<Navigate to="/Home" />} />
       </Routes>

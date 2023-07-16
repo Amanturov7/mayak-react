@@ -18,18 +18,18 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
 
 // PageHeaders page components
-import HeaderOne from "layouts/sections/page-sections/page-headers/components/HeaderOne";
+import HeaderOne from "layouts/sections/page-sections/news3/components/HeaderOne";
 
 // PageHeaders page components code
 // import headerOneCode from "layouts/sections/page-sections/page-headers/components/HeaderOne/code";
 
-function PageHeaders() {
+function NewsPage3() {
   return (
     <BaseLayout
       title="В Бишкеке задержали учеников престижной школы с наркотиками"
       breadcrumb={[
         { label: "Главная", route: "/" },
-        { label: "Новости", route: "/" },
+        { label: "Новости", route: "/sections/page-sections/news" },
       ]}
     >
       <View title="Header 1" height="40rem">
@@ -39,4 +39,4 @@ function PageHeaders() {
   );
 }
 
-export default PageHeaders;
+export default NewsPage3;
