@@ -18,7 +18,7 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
 
 // PageHeaders page components
-import HeaderOne from "layouts/sections/page-sections/page-headers/components/HeaderOne";
+import HeaderOne from "layouts/sections/page-sections/news1/components/HeaderOne";
 
 // PageHeaders page components code
 // import headerOneCode from "layouts/sections/page-sections/page-headers/components/HeaderOne/code";
@@ -26,13 +26,13 @@ import HeaderOne from "layouts/sections/page-sections/page-headers/components/He
 function NewsPage1() {
   return (
     <BaseLayout
-      title="В Бишкеке задержали учеников престижной школы с наркотиками"
+      title="ГКНБ просит сообщать о фактах вовлечения граждан в наркопреступления — номера"
       breadcrumb={[
-        { label: "Главна1я", route: "/" },
+        { label: "Главная", route: "/" },
         { label: "Новости", route: "/sections/page-sections/news" },
       ]}
     >
-      <View title="Header 1" height="40rem">
+      <View title="Новости" height="40rem">
         <HeaderOne />
       </View>
     </BaseLayout>

@@ -18,7 +18,7 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
 
 // PageHeaders page components
-import HeaderOne from "layouts/sections/page-sections/page-headers/components/HeaderOne";
+import HeaderOne from "layouts/sections/page-sections/news5/components/HeaderOne";
 
 // PageHeaders page components code
 // import headerOneCode from "layouts/sections/page-sections/page-headers/components/HeaderOne/code";
@@ -26,7 +26,7 @@ import HeaderOne from "layouts/sections/page-sections/page-headers/components/He
 function NewsPage5() {
   return (
     <BaseLayout
-      title="В Бишкеке задержали учеников престижной школы с наркотиками"
+      title="Первый признак развивающегося алкоголизма назвала врач"
       breadcrumb={[
         { label: "Главная", route: "/" },
         { label: "Новости", route: "/sections/page-sections/news" },

@@ -48,11 +48,11 @@ function ContactUs() {
         />
       </MKBox>
       <Grid container spacing={3} alignItems="center">
-        <Grid item xs={12} lg={6}>
+        <Grid item xs={12} lg={5}>
           <MKBox
             display={{ xs: "none", lg: "flex" }}
-            width="calc(100% - 2rem)"
-            height="calc(78vh - 2rem)"
+            width="calc(100% - 1rem)"
+            height="calc(75vh - 1rem)"
             borderRadius="lg"
             ml={2}
             mt={20}
@@ -76,9 +76,9 @@ function ContactUs() {
             display="flex"
             flexDirection="column"
             justifyContent="center"
-            mt={{ xs: 20, sm: 18, md: 20 }}
-            mb={{ xs: 20, sm: 18, md: 20 }}
-            mx={3}
+            mt={{ xs: 10, sm: 18, md: 20 }}
+            mb={{ xs: 10, sm: 18, md: 20 }}
+            mx={2}
           >
             <MKBox
               variant="gradient"
@@ -102,17 +102,27 @@ function ContactUs() {
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={6}>
                     <MKInput
+                      type="email"
                       variant="standard"
-                      label="Фио"
+                      label="Email"
                       InputLabelProps={{ shrink: true }}
                       fullWidth
+                      inputProps={{ inputMode: "tel" }}
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>
                     <MKInput
-                      type="email"
+                      type="tel"
                       variant="standard"
-                      label="Email"
+                      label="Телефон"
+                      InputLabelProps={{ shrink: true }}
+                      fullWidth
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={12}>
+                    <MKInput
+                      variant="standard"
+                      label="Фио"
                       InputLabelProps={{ shrink: true }}
                       fullWidth
                     />

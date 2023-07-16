@@ -12,12 +12,11 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
-const imagesPrefix =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/pages";
+const imagesPrefix ="./assets/images/photos";
 
 export default [
   {
-    image: `${imagesPrefix}/about-us.jpg`,
+    image: `${imagesPrefix}/Школьники.jpg`,
     name: "About Us Page",
     route: "/pages/landing-pages/about-us",
   },

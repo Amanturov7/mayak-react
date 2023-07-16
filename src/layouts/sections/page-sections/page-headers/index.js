@@ -29,7 +29,7 @@ function PageHeaders() {
       title="В Бишкеке задержали учеников престижной школы с наркотиками"
       breadcrumb={[
         { label: "Главная", route: "/" },
-        { label: "Новости", route: "/" },
+        { label: "Новости", route: "/sections/page-sections/news" },
       ]}
     >
       <View title="Header 1" height="40rem">

@@ -26,7 +26,7 @@ import HeaderOne from "layouts/sections/page-sections/news3/components/HeaderOne
 function NewsPage3() {
   return (
     <BaseLayout
-      title="В Бишкеке задержали учеников престижной школы с наркотиками"
+      title="В Бишкеке закрашено 400 надписей рекламирующие синтетические наркотики"
       breadcrumb={[
         { label: "Главная", route: "/" },
         { label: "Новости", route: "/sections/page-sections/news" },
