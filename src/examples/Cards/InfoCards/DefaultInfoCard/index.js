@@ -82,7 +82,7 @@ DefaultInfoCard.propTypes = {
   ]),
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.node.isRequired, // Исправлено на PropTypes.node
   direction: PropTypes.oneOf(["left", "right", "center"]),
   small: PropTypes.bool,
 };

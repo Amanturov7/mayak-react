@@ -1,51 +1,58 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// @mui material components
+import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
-
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
-
-// Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-
-// Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
-
-// Image
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+import axios from "axios";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactUs() {
+  const [formData, setFormData] = useState({
+    recipient: "",
+    msgBody: "",
+    title: "",
+    phone: "",
+    fullName: "",
+  });
+
+  const [isSending, setIsSending] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSending(true);
+    const updatedFormData = { ...formData, msgBody: "Your message here" };
+    axios
+      .post("http://localhost:8080/api/sendMail", updatedFormData, {
+        headers: { "Content-Type": "application/json" },
+      })
+      .then(() => {
+        setIsSending(false);
+        toast.success("Сообщение успешно отправлено!", {
+          autoClose: 3000,
+        });
+      })
+      .catch((error) => {
+        console.error("Ошибка при отправке запроса:", error);
+        setErrorMessage("Ошибка при отправке запроса");
+        setIsSending(false);
+        toast.error(errorMessage, {
+          autoClose: 3000,
+        });
+      });
+  };
+
   return (
     <>
       <MKBox position="fixed" top="0.5rem" width="100%">
-        <DefaultNavbar
-          routes={routes}
-          // action={{
-          //   type: "external",
-          //   route: "/pages/authentication/sign-in",
-          //   label: "Войти",
-          //   color: "info",
-          // }}
-        />
+        <DefaultNavbar routes={routes} />
       </MKBox>
       <Grid container spacing={3} alignItems="center">
         <Grid item xs={12} lg={5}>
@@ -98,52 +105,75 @@ function ContactUs() {
                 По дополнительным вопросам, в том числе по возможностям партнерства, обращайтесь по
                 электронной почте rebcentermayakbishkek@gmail.com
               </MKTypography>
-              <MKBox width="100%" component="form" method="post" autoComplete="off">
-                <Grid container spacing={3}>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      type="email"
-                      variant="standard"
-                      label="Email"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                      inputProps={{ inputMode: "tel" }}
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      type="tel"
-                      variant="standard"
-                      label="Телефон"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={12}>
-                    <MKInput
-                      variant="standard"
-                      label="Фио"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <MKInput
-                      variant="standard"
-                      label="Чем мы можем помочь?"
-                      placeholder="Опишите свою проблему не менее 250 символов"
-                      InputLabelProps={{ shrink: true }}
-                      multiline
-                      fullWidth
-                      rows={6}
-                    />
-                  </Grid>
+              <MKBox
+                width="100%"
+                component="form"
+                method="post"
+                autoComplete="off"
+                onSubmit={handleSubmit}
+              >
+                <Grid item xs={12} md={6}>
+                  <MKInput
+                    type="email"
+                    variant="standard"
+                    label="Email"
+                    InputLabelProps={{ shrink: true }}
+                    fullWidth
+                    inputProps={{ inputMode: "tel" }}
+                    value={formData.recipient}
+                    onChange={(e) => setFormData({ ...formData, recipient: e.target.value })}
+                  />
+                </Grid>
+                <Grid item xs={12} md={6}>
+                  <MKInput
+                    type="tel"
+                    variant="standard"
+                    label="Телефон"
+                    InputLabelProps={{ shrink: true }}
+                    fullWidth
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  />
+                </Grid>
+                <Grid item xs={12} md={12}>
+                  <MKInput
+                    variant="standard"
+                    label="Фио"
+                    InputLabelProps={{ shrink: true }}
+                    fullWidth
+                    value={formData.fullName}
+                    onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <MKInput
+                    variant="standard"
+                    label="Чем мы можем помочь?"
+                    placeholder="Опишите свою проблему не менее 250 символов"
+                    InputLabelProps={{ shrink: true }}
+                    multiline
+                    fullWidth
+                    rows={6}
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  />
                 </Grid>
                 <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
                   <MKButton type="submit" variant="gradient" color="info">
-                    Отправить
+                    {isSending ? "Отправка..." : "Отправить"}
                   </MKButton>
                 </Grid>
+                <ToastContainer
+                  position="top-right"
+                  autoClose={5000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                />
               </MKBox>
             </MKBox>
           </MKBox>
@@ -152,6 +182,17 @@ function ContactUs() {
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </>
   );
 }

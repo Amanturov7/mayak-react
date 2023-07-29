@@ -32,9 +32,9 @@ import footerRoutes from "footer.routes";
 
 // Image
 // import bgImage from "assets/images/illustrations/illustration-reset.jpg";
-import Services from "pages/LandingPages/Information/Sections/services";
+import Services from "pages/LandingPages/Zavisimye/Sections/services";
 
-function Information() {
+function Zavisimye() {
   return (
     <>
       <DefaultNavbar
@@ -56,4 +56,4 @@ function Information() {
   );
 }
 
-export default Information;
+export default Zavisimye;

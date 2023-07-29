@@ -45,25 +45,6 @@ Coded by www.creative-tim.com
 // import AboutUs from "layouts/pages/landing-pages/about-us";
 // import Information from "layouts/pages/landing-pages/Information";
 // import Author from "pages/LandingPages/Author";
-import Information from "pages/LandingPages/Information";
-import Zavisimye from "pages/LandingPages/Zavisimye";
-import InformationIcon from "assets/images/navbar/Информация.png";
-import GalleryIcon from "assets/images/navbar/Галерея.png";
-import AboutUsIcon from "assets/images/navbar/О нас.png";
-import ServicesIcon from "assets/images/navbar/Услуги.png";
-import NewsIcon from "assets/images/navbar/Новости.png";
-import ContactUsIcon from "assets/images/navbar/Связаться.png";
-import EmployeeIcon from "assets/images/navbar/Сотрудники.png";
-import ContactUs from "pages/LandingPages/ContactUs";
-// import SignInPage from "layouts/pages/authentication/sign-in";
-// import Author from "layouts/pages/landing-pages/author";
-import SignIn from "layouts/pages/authentication/sign-in";
-import AboutUs from "pages/LandingPages/AboutUs";
-import Employee from "pages/LandingPages/Employee";
-
-// import Author from "pages/LandingPages/Author";
-// Sections
-import News from "layouts/sections/page-sections/news";
 // import Features from "layouts/sections/page-sections/featuers";
 // import Navbars from "layouts/sections/navigation/navbars";
 // import NavTabs from "layouts/sections/navigation/nav-tabs";
@@ -81,6 +62,26 @@ import News from "layouts/sections/page-sections/news";
 // import ProgressBars from "layouts/sections/elements/progress-bars";
 // import Toggles from "layouts/sections/elements/toggles";
 // import Typography from "layouts/sections/elements/typography";
+import Information from "pages/LandingPages/Information";
+import Zavisimye from "pages/LandingPages/Zavisimye";
+import InformationIcon from "assets/images/navbar/Информация.png";
+import GalleryIcon from "assets/images/navbar/Галерея.png";
+import AboutUsIcon from "assets/images/navbar/О нас.png";
+import ServicesIcon from "assets/images/navbar/Услуги.png";
+import NewsIcon from "assets/images/navbar/Новости.png";
+import ContactUsIcon from "assets/images/navbar/Связаться.png";
+import EmployeeIcon from "assets/images/navbar/Сотрудники.png";
+import ContactUs from "pages/LandingPages/ContactUs";
+// import SignInPage from "layouts/pages/authentication/sign-in";
+// import Author from "layouts/pages/landing-pages/author";
+import SignIn from "layouts/pages/authentication/sign-in";
+import AboutUs from "pages/LandingPages/AboutUs";
+import Gallery from "pages/LandingPages/Gallery";
+import Employee from "pages/LandingPages/Employee";
+
+// import Author from "pages/LandingPages/Author";
+// Sections
+import News from "layouts/sections/page-sections/news";
 
 const iconStyle = {
   width: "15px", // Укажите желаемую ширину
@@ -108,7 +109,8 @@ const routes = [
   {
     name: "Галерея",
     icon: <img src={GalleryIcon} style={iconStyle} />,
-    href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
+    route: "/pages/landing-pages/Gallery",
+    component: <Gallery />,
   },
   {
     icon: <img src={NewsIcon} style={iconStyle} />,

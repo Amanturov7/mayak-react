@@ -21,7 +21,7 @@ import { Link } from "react-router-dom";
 
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
-
+import SignOut from "../../../SignOut"; // Укажите правильный путь к компоненту SignOut
 // @mui material components
 import Container from "@mui/material/Container";
 import Icon from "@mui/material/Icon";
@@ -448,7 +448,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
       )}
     </Popper>
   );
-
+  const isUserAuthenticated = sessionStorage.getItem("token") !== null;
   return (
     <Container sx={sticky ? { position: "sticky", top: 0, zIndex: 10 } : null}>
       <MKBox
@@ -521,6 +521,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                   {action.label}
                 </MKButton>
               ))}
+            {isUserAuthenticated && <SignOut />}
           </MKBox>
           <MKBox
             display={{ xs: "inline-block", lg: "none" }}
@@ -560,7 +561,6 @@ DefaultNavbar.defaultProps = {
   center: false,
 };
 
-// Typechecking props for the DefaultNavbar
 DefaultNavbar.propTypes = {
   brand: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.shape).isRequired,

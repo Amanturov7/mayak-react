@@ -14,22 +14,16 @@ Coded by www.creative-tim.com
 */
 
 // prop-types is a library for typechecking of props
+import React from "react";
 import PropTypes from "prop-types";
-
-// react-router-dom components
 import { Link } from "react-router-dom";
-
-// @mui material components
 import Collapse from "@mui/material/Collapse";
 import Icon from "@mui/material/Icon";
-
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-
 function DefaultNavbarDropdown({
   name,
-  icon,
+  icon = null, // Добавлено значение по умолчанию null
   children,
   collapseStatus,
   light,
@@ -64,14 +58,17 @@ function DefaultNavbarDropdown({
         {...(route && routeComponent)}
         {...(href && linkComponent)}
       >
-        <MKTypography
-          variant="body2"
-          lineHeight={1}
-          color="inherit"
-          sx={{ alignSelf: "center", "& *": { verticalAlign: "middle" } }}
-        >
-          {icon}
-        </MKTypography>
+        {/* Убедитесь, что icon существует перед его отображением */}
+        {icon && (
+          <MKTypography
+            variant="body2"
+            lineHeight={1}
+            color="inherit"
+            sx={{ alignSelf: "center", "& *": { verticalAlign: "middle" } }}
+          >
+            {icon}
+          </MKTypography>
+        )}
         <MKTypography
           variant="button"
           fontWeight="regular"
@@ -96,19 +93,9 @@ function DefaultNavbarDropdown({
   );
 }
 
-// Setting default values for the props of DefaultNavbarDropdown
-DefaultNavbarDropdown.defaultProps = {
-  children: false,
-  collapseStatus: false,
-  light: false,
-  href: "",
-  route: "",
-};
-
-// Typechecking props for the DefaultNavbarDropdown
 DefaultNavbarDropdown.propTypes = {
   name: PropTypes.string.isRequired,
-  icon: PropTypes.node.isRequired,
+  icon: PropTypes.node, // Тип пропса изменен на node
   children: PropTypes.node,
   collapseStatus: PropTypes.bool,
   light: PropTypes.bool,

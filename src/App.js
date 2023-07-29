@@ -32,13 +32,14 @@ export default function App() {
   }, [pathname]);
 
   const getRoutes = (allRoutes) =>
-    allRoutes.map((route) => {
+    allRoutes.map((route, index) => {
       if (route.collapse) {
         return getRoutes(route.collapse);
       }
 
       if (route.route) {
-        return <Route exact path={route.route} element={route.component} key={route.key} />;
+        // Добавляем уникальный ключ к компоненту Route
+        return <Route exact path={route.route} element={route.component} key={index} />;
       }
 
       return null;
