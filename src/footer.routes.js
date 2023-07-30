@@ -47,7 +47,7 @@ export default {
       items: [
         { name: "О нас", route: "/pages/landing-pages/about-us" },
         { name: "Услуги", route: "/pages/landing-pages/information" },
-        { name: "Галерея", route: "/pages/landing-pages/information" },
+        { name: "Галерея", route: "/pages/landing-pages/Gallery" },
         { name: "Сотрудники", route: "/pages/landing-pages/employee" },
       ],
     },
