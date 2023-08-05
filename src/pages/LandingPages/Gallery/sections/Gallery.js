@@ -68,7 +68,15 @@ const Gallery = () => {
   const closeModal = () => {
     setModalIsOpen(false);
   };
-
+  const handleDeletePhoto = async (photoId) => {
+    try {
+      console.log("Deleting photo with ID:", photoId); // Добавьте эту строку
+      await axios.delete(`http://localhost:8080/api/deletePhoto/${photoId}`);
+      fetchPhotos();
+    } catch (error) {
+      console.error("Error deleting photo:", error);
+    }
+  };
   return (
     <MKBox component="section" py={12} my={2}>
       <div>{isAuthenticated && <UploadForm onUploadSuccess={fetchPhotos} />}</div>
@@ -111,32 +119,35 @@ const Gallery = () => {
                   key={photo.id}
                   style={{
                     flex: "0 0 50%",
-                    maxWidth: "50%",
-                    cursor: "pointer",
                   }}
-                  onClick={() => handlePhotoClick(photo)}
                 >
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  >
+                  <div style={{ position: "relative" }}>
                     <img
                       src={`http://localhost:8080/api/photos/${photo.id}`}
                       alt="Загруженное фото"
                       style={{
-                        maxWidth: "100%", // Убираем растягивание изображения
-                        maxHeight: "100%", // Убираем растягивание изображения
-                        "@media (max-width: 600px)": {
-                          maxWidth: "300px", // Увеличенные размеры картинок на мобильных устройствах
-                          maxHeight: "300px",
-                        },
+                        maxWidth: "100%",
+                        height: "auto",
+                        cursor: "pointer",
                       }}
+                      onClick={() => handlePhotoClick(photo)}
                     />
+                    {isAuthenticated && (
+                      <button
+                        onClick={() => handleDeletePhoto(photo.id)}
+                        style={{
+                          position: "absolute",
+                          top: "0.5rem",
+                          right: "0.5rem",
+                          background: "none",
+                          border: "none",
+                          color: "red",
+                          cursor: "pointer",
+                        }}
+                      >
+                        Удалить
+                      </button>
+                    )}
                   </div>
                 </Grid>
               ))}
