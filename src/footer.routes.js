@@ -62,20 +62,13 @@ export default {
     {
       name: "Контактные данные",
       items: [
-        { name: "Телефон: 0708 578 877" },
+        { name: "Телефон: " },
+        { name: "0708 578 877 (Горячая линия)" },
         { name: "0507 183 005 (Программный Руководитель)." },
         { name: "Адрес: Кыргызская Республика, г. Бишкек, улица Карадарьинская №52" },
         { name: "Почта: rebcentermayakbishkek@gmail.com." },
       ],
     },
-    // {
-    //   name: "legal",
-    //   items: [
-    //     { name: "terms & conditions", href: "https://www.creative-tim.com/terms" },
-    //     { name: "privacy policy", href: "https://www.creative-tim.com/privacy" },
-    //     { name: "licenses (EULA)", href: "https://www.creative-tim.com/license" },
-    //   ],
-    // },
   ],
   copyright: (
     <MKTypography variant="button" fontWeight="regular">

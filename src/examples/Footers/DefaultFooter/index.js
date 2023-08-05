@@ -52,7 +52,7 @@ function DefaultFooter({ content }) {
                 display="block"
                 variant="button"
                 fontWeight="bold"
-                textTransform="capitalize"
+                textTransform="none"
                 mb={1}
               >
                 {title}
@@ -68,7 +68,7 @@ function DefaultFooter({ content }) {
                         rel="noreferrer"
                         variant="button"
                         fontWeight="regular"
-                        textTransform="capitalize"
+                        textTransform="none"
                       >
                         {name}
                       </MKTypography>
@@ -78,7 +78,7 @@ function DefaultFooter({ content }) {
                         to={route}
                         variant="button"
                         fontWeight="regular"
-                        textTransform="capitalize"
+                        textTransform="none"
                       >
                         {name}
                       </MKTypography>
