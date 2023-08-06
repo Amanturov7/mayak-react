@@ -15,7 +15,7 @@ const UploadForm = ({ onUploadSuccess }) => {
 
   const handleUpload = async () => {
     if (!selectedFile) {
-      alert("Выберите Фотографию.");
+      alert("Выберите Фотографию");
       return;
     }
     setIsUploading(true);

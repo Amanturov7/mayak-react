@@ -32,7 +32,7 @@ function NewsPage4() {
         { label: "Новости", route: "/sections/page-sections/news" },
       ]}
     >
-      <View title="Header 1" height="40rem">
+      <View title="" height="40rem">
         <HeaderOne />
       </View>
     </BaseLayout>

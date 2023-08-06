@@ -48,7 +48,14 @@ function DesignBlocks() {
         <Grid container spacing={3}>
           {items.map(({ image, name, count, route, pro }) => (
             <Grid item xs={12} md={4} sx={{ mb: 2 }} key={name}>
-              <Link to={pro ? "/" : route}>
+              <Link
+                to={pro ? "/" : route}
+                style={{
+                  display: "block",
+                  width: "100%",
+                  height: "100%",
+                }}
+              >
                 <ExampleCard image={image} name={name} count={count} pro={pro} />
               </Link>
             </Grid>
@@ -70,20 +77,9 @@ function DesignBlocks() {
           alignItems="center"
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
-          {/* <MKBadge
-            variant="contained"
-            color="info"
-            badgeContent="Infinite combinations"
-            container
-            sx={{ mb: 2 }}
-          /> */}
           <MKTypography variant="h2" fontWeight="bold">
             Новости
           </MKTypography>
-          {/* <MKTypography variant="body1" color="text">
-            We have created multiple options for you to put together and customise into pixel
-            perfect pages.
-          </MKTypography> */}
         </Grid>
       </Container>
       <Container sx={{ mt: 6 }}>{renderData}</Container>

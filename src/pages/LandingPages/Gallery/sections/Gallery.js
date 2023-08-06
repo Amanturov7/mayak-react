@@ -82,7 +82,7 @@ const Gallery = () => {
       <div>{isAuthenticated && <UploadForm onUploadSuccess={fetchPhotos} />}</div>
       <Container>
         <div>
-          <h1>Галерея фотографий</h1>
+          <h1>Галерея</h1>
         </div>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={20} sx={{ ml: "auto" }}>

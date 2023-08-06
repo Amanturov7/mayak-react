@@ -24,15 +24,15 @@ Coded by www.creative-tim.com
 // // import MKButton from "components/MKButton";
 // import MKTypography from "components/MKTypography";
 
-import bgImage from "assets/images/bg-coworking.jpeg";
+import bgImage from "assets/images/photos/Краска.jpg";
 
 function HeaderOne() {
   const iconStyle = {
-    width: "200px", // Укажите желаемую ширину
-    height: "200px", // Укажите желаемую высоту
+    width: "500px", // Укажите желаемую ширину
+    height: "500px", // Укажите желаемую высоту
   };
   const newsStyle = {
-    maxWidth: "1000px",
+    maxWidth: "1600px",
     margin: "0",
     fontFamily: "Arial, sans-serif",
     lineHeight: "1.6",
@@ -44,21 +44,18 @@ function HeaderOne() {
     textAlign: "left",
   };
   return (
+    // prettier-ignore
     <div style={newsStyle}>
       <img src={bgImage} style={iconStyle} />
       <p style={paragraphStyle}>
         На территории столицы было закрашено и удалено более 400 надписей,
-        <br />
         рекламирующих телеграмм-каналы, которые распространяют синтетические наркотики.
-        <br />
         Об этом сообщает пресс-служба УВД города Бишкека.
         <br />
+        <br />
         Сотрудники столичной милиции провели профилактические мероприятия
-        <br />
         под наименованием Синтетик.
-        <br />
         Основная цель проверенных работ - выявление и удаление надписей,
-        <br />
         содержащих информацию о распространении синтетических наркотиков.
       </p>
     </div>

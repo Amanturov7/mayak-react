@@ -41,6 +41,7 @@ export default {
       link: "https://instagram.com/mayak_bish?igshid=MzNlNGNkZWQ4Mg==",
     },
   ],
+  // prettier-ignore
   menus: [
     {
       name: "Компания",
@@ -55,7 +56,7 @@ export default {
       name: "Ресурсы",
       items: [
         { name: "Новости", route: "/sections/page-sections/news" },
-        { name: "Информация", route: "/pages/landing-pages/Information" },
+        { name: "Информация", route: "/pages/landing-pages/Zavisimye" },
         { name: "Связаться", route: "/pages/landing-pages/contact-us" },
       ],
     },
@@ -63,10 +64,11 @@ export default {
       name: "Контактные данные",
       items: [
         { name: "Телефон: " },
-        { name: "0708 578 877 (Горячая линия)" },
-        { name: "0507 183 005 (Программный Руководитель)." },
-        { name: "Адрес: Кыргызская Республика, г. Бишкек, улица Карадарьинская №52" },
-        { name: "Почта: rebcentermayakbishkek@gmail.com." },
+        { name: "0507 183 005 Программный Руководитель" },
+        { name: "Адрес:" },
+        { name: "Кыргызская Республика, г. Бишкек, улица Карадарьинская №52", href: "https://2gis.kg/bishkek/firm/70000001069288190/74.629377%2C42.850444?m=74.629482%2C42.850505%2F18.99" },
+        { name: "Почта:" },
+        { name: "rebcentermayakbishkek@gmail.com" },
       ],
     },
   ],

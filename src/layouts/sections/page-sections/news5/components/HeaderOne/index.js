@@ -24,15 +24,15 @@ Coded by www.creative-tim.com
 // // import MKButton from "components/MKButton";
 // import MKTypography from "components/MKTypography";
 
-import bgImage from "assets/images/bg-coworking.jpeg";
+import bgImage from "assets/images/photos/Алко.jpg";
 
 function HeaderOne() {
   const iconStyle = {
-    width: "200px", // Укажите желаемую ширину
-    height: "200px", // Укажите желаемую высоту
+    width: "600px", // Укажите желаемую ширину
+    height: "400px", // Укажите желаемую высоту
   };
   const newsStyle = {
-    maxWidth: "800px",
+    maxWidth: "1600px",
     margin: "0",
     fontFamily: "Arial, sans-serif",
     lineHeight: "1.6",
@@ -44,29 +44,25 @@ function HeaderOne() {
     textAlign: "left",
   };
   return (
+    // prettier-ignore
     <div style={newsStyle}>
       <img src={bgImage} style={iconStyle} />
       <p style={paragraphStyle}>
         На первой стадии алкоголизма люди могут выпивать по выходным или по вечерам в будни.
-        <br />
         Мечта о выпивке в выходные или после работы в будни является первым признаком
-        <br />
         развивающегося алкоголизма, сообщила агентству Ura.ru
-        <br />
         главврач наркологической клиники Спасение Кира Устюгова.
         <br />
+        <br />
         Она пояснила, что люди на первой стадии алкоголизма могут выпивать
-        <br />
         по выходным или по вечерам в будни.
-        <br />
         Человек начинает мотивировать себя, что он заедет в магазин после работы
-        <br />
         или дождется выходных, чтобы выпить. Он испытывает эйфорию от предстоящего процесса,
-        <br />
         - отметила нарколог.
         <br />
+        <br />
         Со временем количество и крепость употребляемого алкоголя начинают расти.
-        <br />В этом случае необходимо обратиться за помощью к специалисту.
+        В этом случае необходимо обратиться за помощью к специалисту.
       </p>
     </div>
   );
