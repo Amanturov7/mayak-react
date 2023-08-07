@@ -29,11 +29,10 @@ import DetoxIcon from "assets/images/icons/servis/Детокс.png";
 import DuhovnoeIcon from "assets/images/icons/servis/Духовное.png";
 import MotivationIcon from "assets/images/icons/servis/Мотивация.png";
 import PsyhologyIcon from "assets/images/icons/servis/Психолог.png";
-
-import AlkoIcon from "assets/images/icons/servis/Алкоголизм.png";
-import NarkoIcon from "assets/images/icons/servis/Наркомания.png";
-import IgroIcon from "assets/images/icons/servis/Игромания.png";
-import ToxicIcon from "assets/images/icons/servis/Токсикомания.png";
+import AlkoIcon from "assets/images/icons/zavis/Алкоголизм.png";
+import NarkoIcon from "assets/images/icons/zavis/Наркомания.png";
+import IgroIcon from "assets/images/icons/zavis/Игромания.png";
+import ToxicIcon from "assets/images/icons/zavis/Токсикомания.png";
 // Images
 // import bgFront from "assets/images/rotating-card-bg-front.jpeg";
 // import bgBack from "assets/images/rotating-card-bg-back.jpeg";
