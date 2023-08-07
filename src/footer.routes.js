@@ -5,6 +5,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 // import OdnoclassnikiIcon from "@mui/icons-material/Odnoclassniki";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 // Material Kit 2 React components
 import MKTypography from "components/MKTypography";
 import AccessibilityNewRoundedIcon from "@mui/icons-material/AccessibilityNewRounded";
@@ -39,6 +40,10 @@ export default {
     {
       icon: <InstagramIcon />,
       link: "https://instagram.com/mayak_bish?igshid=MzNlNGNkZWQ4Mg==",
+    },
+    {
+      icon: <WhatsAppIcon />,
+      link: "https://api.whatsapp.com/send/?phone=996507183005&text&type=phone_number&app_absent=0",
     },
   ],
   // prettier-ignore
