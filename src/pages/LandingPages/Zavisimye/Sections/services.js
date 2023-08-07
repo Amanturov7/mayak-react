@@ -29,6 +29,11 @@ import DetoxIcon from "assets/images/icons/servis/Детокс.png";
 import DuhovnoeIcon from "assets/images/icons/servis/Духовное.png";
 import MotivationIcon from "assets/images/icons/servis/Мотивация.png";
 import PsyhologyIcon from "assets/images/icons/servis/Психолог.png";
+
+import AlkoIcon from "assets/images/icons/servis/Алкоголизм.png";
+import NarkoIcon from "assets/images/icons/servis/Наркомания.png";
+import IgroIcon from "assets/images/icons/servis/Игромания.png";
+import ToxicIcon from "assets/images/icons/servis/Токсикомания.png";
 // Images
 // import bgFront from "assets/images/rotating-card-bg-front.jpeg";
 // import bgBack from "assets/images/rotating-card-bg-back.jpeg";
@@ -44,7 +49,7 @@ function Services() {
           <Grid item xs={12} lg={12} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>
               <DefaultInfoCard
-                icon={<img src={DetoxIcon} style={iconStyle} />}
+                icon={<img src={AlkoIcon} style={iconStyle} />}
                 title="Информация об Алкоголизме"
                 description={
                   // prettier-ignore
@@ -171,7 +176,7 @@ function Services() {
                 }
               />
               <DefaultInfoCard
-                icon={<img src={PsyhologyIcon} style={iconStyle} />}
+                icon={<img src={NarkoIcon} style={iconStyle} />}
                 title="Информация о Наркомании"
                 // prettier-ignore
                 description={
@@ -289,7 +294,7 @@ function Services() {
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <DefaultInfoCard
-                icon={<img src={DuhovnoeIcon} style={iconStyle} />}
+                icon={<img src={IgroIcon} style={iconStyle} />}
                 title="Информация об Игромании"
                 // prettier-ignore
                 description={
@@ -381,7 +386,7 @@ function Services() {
               />
               <div style={{ marginTop: "50px" }}>
                 <DefaultInfoCard
-                  icon={<img src={MotivationIcon} style={iconStyle} />}
+                  icon={<img src={ToxicIcon} style={iconStyle} />}
                   title="Информация о Токсикомании"
                   // prettier-ignore
                   description={
