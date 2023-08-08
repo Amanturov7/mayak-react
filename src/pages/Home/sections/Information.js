@@ -46,30 +46,58 @@ function Information() {
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <RotatingCard>
-              <RotatingCardFront
-                image={bgFront}
-                icon="touch_app"
-                title={
-                  <>
-                    Вам
-                    <br />
-                    нужна помощь?
-                  </>
-                }
-                description="Свяжитесь с нами чтобы получить бесплатную консультацию."
-              />
-              <RotatingCardBack
-                image={bgBack}
-                title="Услуги"
-                description="Анонимный Реабилитационный центр предоставляет ряд услуг, чтобы узнать больше нажмите 'Подробнее'."
-                action={{
-                  type: "internal",
-                  route: "/pages/landing-pages/Information",
-                  label: "Подробнее",
-                }}
-              />
-            </RotatingCard>
+            <div style={{ marginBottom: "100px" }}>
+              <RotatingCard>
+                <RotatingCardFront
+                  image={bgFront}
+                  icon="touch_app"
+                  title={
+                    <>
+                      Вам
+                      <br />
+                      нужна помощь?
+                    </>
+                  }
+                  description="Свяжитесь с нами чтобы получить бесплатную консультацию."
+                />
+                <RotatingCardBack
+                  image={bgBack}
+                  title="Услуги"
+                  description="Анонимный Реабилитационный центр предоставляет ряд услуг, чтобы узнать больше нажмите 'Подробнее'"
+                  action={{
+                    type: "internal",
+                    route: "/pages/landing-pages/Information",
+                    label: "Подробнее",
+                  }}
+                />
+              </RotatingCard>
+            </div>
+            <div>
+              <RotatingCard>
+                <RotatingCardFront
+                  image={bgFront}
+                  icon="touch_app"
+                  title={
+                    <>
+                      Полезная
+                      <br />
+                      информация
+                    </>
+                  }
+                  description="Информация о видах зависимостей"
+                />
+                <RotatingCardBack
+                  image={bgBack}
+                  title="Зависимость"
+                  description="Чтобы узнать больше о зависимостях нажмите 'Подробнее'"
+                  action={{
+                    type: "internal",
+                    route: "/pages/landing-pages/Information",
+                    label: "Подробнее",
+                  }}
+                />
+              </RotatingCard>
+            </div>
           </Grid>
           <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>

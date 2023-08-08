@@ -27,7 +27,8 @@ import bgImage from "assets/images/photos/Нарко.webp";
 function HeaderOne() {
   const iconStyle = {
     width: "350px", // Укажите желаемую ширину
-    height: "500px", // Укажите желаемую высоту
+    height: "500px",
+    marginLeft: "150px", // Укажите желаемую высоту
   };
   const newsStyle = {
     maxWidth: "1600px",

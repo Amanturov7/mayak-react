@@ -37,7 +37,7 @@ export default [
       },
       {
         image: `https://medvestnik.by/images/photo_23371.webp`,
-        name: "В КР стартует кампания Спасите жизни. Поделитесь фактами о наркотиках.",
+        name: "В КР стартует кампания  «Спасите жизни», поделитесь фактами о наркотиках",
         route: "/layouts/sections/page-sections/news4",
       },
       {

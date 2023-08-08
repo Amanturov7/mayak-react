@@ -14,20 +14,26 @@ function DefaultFooter({ content }) {
       <Container>
         <Grid container spacing={1}>
           <Grid item xs={12} md={5} sx={{ mb: 2, flexBasis: { xs: "30%", md: "25%" } }}>
-            <MKBox>
+            <MKBox ml={5}>
               <Link to={brand.route}>
                 <MKBox
                   component="img"
                   src={brand.image}
                   alt={brand.name}
-                  maxWidth="7rem"
+                  maxWidth="15rem"
                   mb={2}
-                  ml="15%"
+                  ml="5%"
                 />
               </Link>
-              <MKTypography variant="h6">{brand.name}</MKTypography>
+              <MKTypography
+                // prettier-ignore
+                sx={{ fontSize: "13px" }}
+                variant="h6"
+              >
+                {brand.name}
+              </MKTypography>
             </MKBox>
-            <MKBox display="flex" alignItems="center" mt={2}>
+            <MKBox display="flex" alignItems="center" mt={2} ml={3}>
               {socials.map(({ icon, link }, index) => (
                 <MKTypography
                   key={index}
@@ -38,8 +44,8 @@ function DefaultFooter({ content }) {
                   variant="h5"
                   color="dark"
                   opacity={0.8}
-                  mr={1.5} // Adjust the right margin as needed
-                  sx={{ width: "1.5rem" }} // Adjust the width as needed
+                  mr={1.0} // Adjust the right margin as needed
+                  sx={{ width: "2.5rem" }} // Adjust the width as needed
                 >
                   {icon}
                 </MKTypography>
@@ -47,13 +53,14 @@ function DefaultFooter({ content }) {
             </MKBox>
           </Grid>
           {menus.map(({ name: title, items }) => (
-            <Grid key={title} item xs={6} md={3} sx={{ mb: 3, flexBasis: "25%" }}>
+            <Grid key={title} item xs={6} md={1.7} sx={{ mb: 3, ml: "10%", flexBasis: "25%" }}>
               <MKTypography
                 display="block"
                 variant="button"
                 fontWeight="bold"
                 textTransform="none"
                 mb={1}
+                sx={{ fontSize: 17 }} // Set the font size here
               >
                 {title}
               </MKTypography>
@@ -69,6 +76,7 @@ function DefaultFooter({ content }) {
                         variant="button"
                         fontWeight="regular"
                         textTransform="none"
+                        sx={{ fontSize: 17 }} // Set the font size here
                       >
                         {name}
                       </MKTypography>
@@ -79,6 +87,7 @@ function DefaultFooter({ content }) {
                         variant="button"
                         fontWeight="regular"
                         textTransform="none"
+                        sx={{ fontSize: 17 }} // Set the font size here
                       >
                         {name}
                       </MKTypography>

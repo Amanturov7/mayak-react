@@ -26,7 +26,7 @@ import HeaderOne from "layouts/sections/page-sections/news4/components/HeaderOne
 function NewsPage4() {
   return (
     <BaseLayout
-      title="В КР стартует кампания Спасите жизни. Поделитесь фактами о наркотиках."
+      title="В КР стартует кампания  «Спасите жизни», поделитесь фактами о наркотиках"
       breadcrumb={[
         { label: "Главная", route: "/" },
         { label: "Новости", route: "/sections/page-sections/news" },
