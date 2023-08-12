@@ -20,7 +20,7 @@ function DefaultFooter({ content }) {
                   component="img"
                   src={brand.image}
                   alt={brand.name}
-                  maxWidth="15rem"
+                  maxWidth="13rem"
                   mb={2}
                   ml="5%"
                 />
